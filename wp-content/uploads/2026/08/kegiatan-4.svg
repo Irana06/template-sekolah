@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Kegiatan laboratorium IPA">
+	<rect x="0" y="0" width="800" height="600" rx="28" fill="#e9f1fa"/>
+	<rect x="70" y="70" width="660" height="140" rx="12" fill="#0b2a4a"/>
+	<text x="110" y="150" font-family="Arial, sans-serif" font-size="34" fill="#fff" font-weight="700">Laboratorium IPA</text>
+	<text x="110" y="195" font-family="Arial, sans-serif" font-size="20" fill="#f0b429">Praktikum Seru &amp; Menyenangkan</text>
+	<rect x="100" y="420" width="600" height="110" rx="12" fill="#13477a"/>
+	<path d="M300 120 L320 300 L230 420 H470 L380 300 L400 120 Z" fill="#fff" stroke="#0b2a4a" stroke-width="6"/>
+	<path d="M330 300 H370 L430 420 H270 Z" fill="#63b076" opacity="0.85"/>
+	<circle cx="365" cy="180" r="18" fill="#f0b429"/>
+	<path d="M540 200 V330 L620 420 H470 L550 330 V200 Z" fill="#8a6fde" opacity="0.35"/>
+	<circle cx="545" cy="240" r="12" fill="#d64545"/>
+	<rect x="160" y="200" width="70" height="150" rx="8" fill="#fff" stroke="#0b2a4a" stroke-width="6"/>
+	<path d="M180 350 Q195 400 180 420 H210 Q195 400 210 350 Z" fill="#d64545" opacity="0.7"/>
+	<line x1="340" y1="120" x2="340" y2="200" stroke="#0b2a4a" stroke-width="6"/>
+	<circle cx="340" cy="115" r="14" fill="#d64545"/>
+	<circle cx="340" cy="90" r="8" fill="#f0b429"/>
+</svg>

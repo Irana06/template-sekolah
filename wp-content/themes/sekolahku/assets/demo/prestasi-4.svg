@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Sertifikat penghargaan">
+	<rect x="0" y="0" width="400" height="400" rx="24" fill="#eefbf2"/>
+	<rect x="80" y="70" width="240" height="270" rx="12" fill="#fff" stroke="#f0b429" stroke-width="10"/>
+	<path d="M200 110 L213 142 L248 146 L222 170 L228 205 L200 190 L172 205 L178 170 L152 146 L187 142 Z" fill="#f0b429"/>
+	<rect x="120" y="225" width="160" height="14" rx="7" fill="#dcdcde"/>
+	<rect x="145" y="255" width="110" height="10" rx="5" fill="#eef1f4"/>
+	<rect x="160" y="278" width="80" height="10" rx="5" fill="#eef1f4"/>
+</svg>

@@ -1,0 +1,1337 @@
+/* ==========================================================================
+   Sekolahku — Theme Styles
+   Biru laut & emas · modern · ramah admin
+   ========================================================================== */
+
+:root {
+	--sk-navy: #0b2a4a;
+	--sk-navy-deep: #071c33;
+	--sk-navy-light: #13477a;
+	--sk-gold: #f0b429;
+	--sk-gold-dark: #d99a1f;
+	--sk-gold-light: #ffe3a3;
+	--sk-sky: #e9f1fa;
+	--sk-ink: #16283b;
+	--sk-slate: #5e7186;
+	--sk-border: #e3ebf4;
+	--sk-radius: 18px;
+	--sk-shadow: 0 10px 30px rgba(11, 42, 74, 0.08);
+	--sk-shadow-lg: 0 22px 50px rgba(11, 42, 74, 0.16);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body.sk-site {
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+img {
+	height: auto;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+.wp-block-button__link {
+	transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+	box-shadow: 0 6px 16px rgba(11, 42, 74, 0.18);
+}
+
+.wp-block-button__link:hover {
+	transform: translateY(-2px);
+}
+
+.is-style-sk-gold .wp-block-button__link {
+	background-color: var(--sk-gold) !important;
+	color: var(--sk-navy-deep) !important;
+}
+
+.is-style-sk-gold .wp-block-button__link:hover {
+	background-color: #f7c95c !important;
+}
+
+.is-style-sk-ghost .wp-block-button__link {
+	background-color: transparent !important;
+	color: #fff !important;
+	border: 1.5px solid rgba(255, 255, 255, 0.65);
+	box-shadow: none;
+}
+
+.is-style-sk-ghost .wp-block-button__link:hover {
+	background-color: rgba(255, 255, 255, 0.14) !important;
+	border-color: #fff;
+}
+
+.is-style-sk-navy .wp-block-button__link {
+	background-color: var(--sk-navy) !important;
+	color: #fff !important;
+}
+
+.is-style-sk-navy .wp-block-button__link:hover {
+	background-color: var(--sk-navy-light) !important;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.sk-header-wrap {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background: #fff;
+	transition: box-shadow 0.3s ease;
+}
+
+.sk-header-wrap.is-scrolled {
+	box-shadow: 0 8px 30px rgba(11, 42, 74, 0.12);
+}
+
+/* Top bar */
+.sk-topbar {
+	font-size: 0.875rem;
+}
+
+.sk-topbar-inner {
+	padding-top: 0.45rem;
+	padding-bottom: 0.45rem;
+	gap: 0.5rem 2rem;
+}
+
+.sk-topbar-item {
+	margin: 0;
+	opacity: 0.9;
+}
+
+.sk-header-inner {
+	gap: 1rem;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+}
+
+.sk-brand {
+	gap: 0.75rem;
+	min-width: 0;
+}
+
+.sk-logo img {
+	object-fit: contain;
+}
+
+.sk-brand-text {
+	gap: 0.1rem;
+	line-height: 1.15;
+}
+
+.sk-brand-text .wp-block-site-title {
+	margin: 0;
+	font-size: 1.15rem;
+}
+
+.sk-brand-text .wp-block-site-tagline {
+	margin: 0;
+	color: var(--sk-slate);
+}
+
+.sk-nav {
+	flex: 1;
+}
+
+.sk-nav .wp-block-navigation-item a {
+	position: relative;
+	padding: 0.4rem 0.2rem;
+}
+
+.sk-nav .wp-block-navigation-item a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.5px;
+	background: var(--sk-gold);
+	border-radius: 3px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.25s ease;
+}
+
+.sk-nav .wp-block-navigation-item a:hover::after,
+.sk-nav .wp-block-navigation-item.current-menu-item a::after {
+	transform: scaleX(1);
+}
+
+.sk-header-cta {
+	margin: 0 !important;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.sk-footer {
+	margin-top: 4rem;
+}
+
+.sk-footer a {
+	color: #cdd8e5;
+	transition: color 0.2s ease;
+}
+
+.sk-footer a:hover {
+	color: var(--sk-gold);
+	text-decoration: none;
+}
+
+.sk-footer-cols {
+	gap: 2.5rem;
+	padding-top: 3.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.sk-footer-brand {
+	gap: 0.7rem;
+	margin-bottom: 1rem;
+}
+
+.sk-footer-brand .wp-block-site-title {
+	margin: 0;
+	font-size: 1.15rem !important;
+}
+
+.sk-footer h4 {
+	margin-bottom: 1rem;
+	color: var(--sk-gold) !important;
+	font-size: 1rem;
+}
+
+.sk-footer-links,
+.sk-footer-contact {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sk-footer-links li,
+.sk-footer-contact li {
+	margin-bottom: 0.6rem;
+}
+
+.sk-footer-sep {
+	margin: 0.5rem 0 1.5rem;
+	background: rgba(255, 255, 255, 0.14);
+	height: 1px;
+	border: 0;
+}
+
+.sk-footer .wp-block-group:last-child {
+	padding-bottom: 1.75rem;
+}
+
+.sk-social a {
+	margin-right: 0.75rem;
+}
+
+/* ==========================================================================
+   PAGE HERO (inner pages)
+   ========================================================================== */
+
+.sk-page-hero {
+	padding: 3.5rem 0 3.25rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.sk-page-hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+	background-size: 26px 26px;
+	pointer-events: none;
+}
+
+.sk-page-hero .wp-block-group {
+	position: relative;
+}
+
+.sk-page-title {
+	margin: 0;
+	color: #fff;
+}
+
+.sk-page-tagline {
+	margin: 0.75rem 0 0;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.sk-content {
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+
+.sk-content-narrow {
+	max-width: 800px;
+}
+
+/* ==========================================================================
+   SECTION HEAD
+   ========================================================================== */
+
+.sk-section-head {
+	margin-bottom: 2.5rem;
+	gap: 1.5rem 2rem;
+}
+
+.sk-section-head-center {
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 0.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.sk-section-head-center .sk-section-title {
+	margin-top: 0.25rem;
+}
+
+.sk-kicker {
+	display: inline-block;
+	margin: 0 0 0.35rem !important;
+	color: var(--sk-gold-dark);
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.sk-section-title {
+	margin: 0;
+}
+
+.sk-section-desc {
+	margin: 0.5rem 0 0;
+	max-width: 560px;
+	color: var(--sk-slate);
+}
+
+/* ==========================================================================
+   QUERY GRID & CARDS
+   ========================================================================== */
+
+.sk-query .wp-block-post-template {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sk-card {
+	background: #fff;
+	border: 1px solid var(--sk-border);
+	border-radius: var(--sk-radius);
+	overflow: hidden;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	height: 100%;
+}
+
+.sk-card:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--sk-shadow-lg);
+	border-color: transparent;
+}
+
+.sk-card-media img {
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+	display: block;
+}
+
+.sk-card-media-square img {
+	aspect-ratio: 1 / 1;
+}
+
+.sk-card-body {
+	padding: 1.25rem 1.25rem 1.4rem;
+	gap: 0.6rem;
+}
+
+.sk-card-body .wp-block-post-date {
+	margin: 0;
+	color: var(--sk-slate);
+	font-weight: 600;
+}
+
+.sk-card-body .wp-block-post-title {
+	margin: 0;
+}
+
+.sk-card-body .wp-block-post-excerpt {
+	margin: 0;
+	color: var(--sk-slate);
+	font-size: 0.92rem;
+}
+
+.sk-card-body-center {
+	text-align: center;
+}
+
+.sk-card-badge {
+	display: inline-block;
+	margin: 0 0 0.5rem !important;
+	padding: 0.3rem 0.8rem;
+	background: var(--sk-gold-light);
+	color: var(--sk-navy-deep);
+	border-radius: 999px;
+	font-size: 0.78rem !important;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+/* Agenda horizontal cards */
+.sk-query-agenda .wp-block-post-template {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.sk-card-horizontal {
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	background: #fff;
+}
+
+.sk-card-date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	padding: 1.1rem 0;
+	background: var(--sk-navy);
+	color: #fff;
+	font-size: 1.3rem !important;
+	font-weight: 800;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.sk-card-date .wp-block-post-date__today {
+	/* noop */
+}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.sk-hero {
+	padding: 4.5rem 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.sk-hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image:
+		radial-gradient(rgba(255, 255, 255, 0.08) 1.2px, transparent 1.2px),
+		radial-gradient(circle at 80% 10%, rgba(240, 180, 41, 0.22), transparent 38%);
+	background-size: 30px 30px, 100% 100%;
+	pointer-events: none;
+}
+
+.sk-hero .wp-block-group {
+	position: relative;
+}
+
+.sk-hero-cols {
+	gap: 2rem;
+	align-items: center;
+}
+
+.sk-badge {
+	display: inline-block;
+	margin: 0 0 1.25rem !important;
+	padding: 0.45rem 1.1rem;
+	background: rgba(240, 180, 41, 0.16);
+	border: 1px solid rgba(240, 180, 41, 0.45);
+	color: var(--sk-gold-light);
+	border-radius: 999px;
+	font-weight: 700;
+}
+
+.sk-hero-title {
+	margin: 0 0 1.25rem;
+	color: #fff;
+	line-height: 1.12;
+}
+
+.sk-hero-title strong {
+	color: var(--sk-gold);
+}
+
+.sk-hero-sub {
+	margin: 0 0 1.75rem;
+	color: rgba(255, 255, 255, 0.82);
+	max-width: 34rem;
+}
+
+.sk-hero-btns {
+	margin: 0;
+}
+
+.sk-hero-media {
+	position: relative;
+}
+
+.sk-hero-img {
+	margin: 0 !important;
+}
+
+.sk-hero-img img {
+	border-radius: 24px;
+	box-shadow: 0 30px 70px rgba(2, 12, 26, 0.55);
+	width: 100%;
+}
+
+.sk-float {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	padding: 0.7rem 1rem;
+	background: #fff;
+	border-radius: 14px;
+	box-shadow: var(--sk-shadow-lg);
+	animation: sk-float 4.5s ease-in-out infinite;
+	z-index: 2;
+}
+
+.sk-float-1 {
+	top: 6%;
+	left: -4%;
+}
+
+.sk-float-2 {
+	bottom: 8%;
+	right: -3%;
+	animation-delay: 2s;
+}
+
+.sk-float-icon {
+	margin: 0 !important;
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+.sk-float-text {
+	margin: 0 !important;
+	line-height: 1.3;
+	color: var(--sk-ink);
+}
+
+@keyframes sk-float {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-10px); }
+}
+
+/* ==========================================================================
+   STATS
+   ========================================================================== */
+
+.sk-stats {
+	padding: 3rem 0;
+}
+
+.sk-stats-cols {
+	gap: 1rem;
+}
+
+.sk-stat {
+	text-align: center;
+	padding: 0.5rem 1rem;
+}
+
+.sk-stat-num {
+	margin: 0 !important;
+	color: var(--sk-navy);
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
+
+.sk-stat-label {
+	margin: 0.25rem 0 0 !important;
+	color: var(--sk-slate);
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   INFO CARDS
+   ========================================================================== */
+
+.sk-info-cards {
+	padding: 3.5rem 0 1.5rem;
+}
+
+.sk-info-cols {
+	gap: 1.25rem;
+}
+
+.sk-info-card {
+	background: #fff;
+	border: 1px solid var(--sk-border);
+	border-radius: var(--sk-radius);
+	padding: 1.75rem 1.5rem;
+	height: 100%;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sk-info-card:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--sk-shadow-lg);
+}
+
+.sk-info-icon {
+	margin: 0 0 0.9rem !important;
+	font-size: 2.2rem;
+	line-height: 1;
+}
+
+.sk-info-card h3 {
+	margin: 0 0 0.5rem;
+}
+
+.sk-info-card p {
+	margin: 0 0 0.75rem;
+	color: var(--sk-slate);
+}
+
+.sk-info-link {
+	margin: 0 !important;
+}
+
+.sk-info-link a {
+	font-weight: 800;
+}
+
+/* ==========================================================================
+   SAMBUTAN
+   ========================================================================== */
+
+.sk-sambutan {
+	padding: 3.5rem 0 1.5rem;
+}
+
+.sk-sambutan-cols {
+	gap: 2.5rem;
+}
+
+.sk-sambutan-img {
+	position: relative;
+	margin: 0 !important;
+}
+
+.sk-sambutan-img::after {
+	content: "";
+	position: absolute;
+	inset: 1rem -1rem -1rem 1rem;
+	border: 3px solid var(--sk-gold);
+	border-radius: 24px;
+	z-index: -1;
+}
+
+.sk-sambutan-img img {
+	border-radius: 24px;
+	width: 100%;
+	box-shadow: var(--sk-shadow);
+}
+
+.sk-sambutan-text .sk-section-title {
+	font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+.sk-sign {
+	margin-top: 1.25rem;
+}
+
+.sk-sign-name {
+	margin: 0 !important;
+	font-size: 1.05rem;
+}
+
+.sk-sign-role {
+	margin: 0 !important;
+	color: var(--sk-slate);
+}
+
+/* ==========================================================================
+   VISI MISI
+   ========================================================================== */
+
+.sk-visi-misi {
+	padding: 2rem 0 1.5rem;
+}
+
+.sk-vm-cols {
+	gap: 1.5rem;
+}
+
+.sk-vm-card {
+	border-radius: var(--sk-radius);
+	padding: 2rem;
+	height: 100%;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sk-vm-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--sk-shadow-lg);
+}
+
+.sk-vm-icon {
+	margin: 0 0 0.75rem !important;
+	font-size: 2.4rem;
+	line-height: 1;
+}
+
+.sk-vm-list {
+	margin: 0;
+	padding-left: 1.2rem;
+}
+
+.sk-vm-list li {
+	margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   SECTION BANDS
+   ========================================================================== */
+
+.sk-news,
+.sk-prestasi,
+.sk-testimoni,
+.sk-kontak,
+.sk-ekskul,
+.sk-agenda {
+	padding: 4rem 0 3.5rem;
+}
+
+.sk-agenda,
+.sk-ekskul {
+	margin-top: 3rem;
+}
+
+/* ==========================================================================
+   TESTIMONI
+   ========================================================================== */
+
+.sk-testi-cols {
+	gap: 1.5rem;
+}
+
+.sk-testi-card {
+	border-radius: var(--sk-radius);
+	padding: 1.75rem;
+	height: 100%;
+	background: #fff;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sk-testi-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--sk-shadow);
+}
+
+.sk-testi-stars {
+	margin: 0 0 0.75rem !important;
+	letter-spacing: 0.15em;
+}
+
+.sk-testi-card p:not(.sk-testi-stars):not(.sk-testi-author) {
+	color: var(--sk-slate);
+}
+
+.sk-testi-author {
+	margin: 1rem 0 0 !important;
+	color: var(--sk-ink);
+	line-height: 1.4;
+}
+
+/* ==========================================================================
+   CTA PPDB
+   ========================================================================== */
+
+.sk-cta {
+	position: relative;
+	padding: 4.5rem 0;
+	overflow: hidden;
+}
+
+.sk-cta::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image:
+		radial-gradient(rgba(240, 180, 41, 0.18), transparent 42%),
+		radial-gradient(rgba(255, 255, 255, 0.08) 1.2px, transparent 1.2px);
+	background-size: 60% 100%, 26px 26px;
+	background-position: 100% 100%, 0 0;
+	pointer-events: none;
+}
+
+.sk-cta-inner {
+	position: relative;
+}
+
+.sk-cta-title {
+	margin: 0 0 0.75rem;
+	color: #fff;
+}
+
+.sk-cta-sub {
+	margin: 0 auto 2rem !important;
+	max-width: 42rem;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+/* ==========================================================================
+   KONTAK
+   ========================================================================== */
+
+.sk-kontak-cards {
+	gap: 1.25rem;
+}
+
+.sk-kontak-item {
+	border-radius: var(--sk-radius);
+	padding: 1.75rem;
+	height: 100%;
+	background: #fff;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sk-kontak-item:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--sk-shadow);
+}
+
+.sk-kontak-icon {
+	margin: 0 0 0.75rem !important;
+	font-size: 2.2rem;
+	line-height: 1;
+}
+
+.sk-kontak-item h3 {
+	margin: 0 0 0.5rem;
+}
+
+.sk-kontak-item p {
+	margin: 0;
+	color: var(--sk-slate);
+}
+
+.sk-map {
+	width: 100%;
+	height: 380px;
+	border: 0;
+	border-radius: var(--sk-radius);
+	box-shadow: var(--sk-shadow);
+	margin-top: 1.5rem;
+}
+
+/* ==========================================================================
+   SINGLE POST
+   ========================================================================== */
+
+.sk-single-cover {
+	margin: 0 0 1.5rem !important;
+}
+
+.sk-single-cover img {
+	border-radius: 20px;
+	width: 100%;
+	box-shadow: var(--sk-shadow);
+}
+
+.sk-meta {
+	gap: 1.25rem;
+	color: var(--sk-slate);
+}
+
+.sk-meta .wp-block-post-date,
+.sk-meta .wp-block-post-author,
+.sk-meta .wp-block-post-terms {
+	margin: 0;
+}
+
+.sk-meta a {
+	font-weight: 600;
+}
+
+.sk-single-title {
+	margin: 0.5rem 0 1rem;
+}
+
+.sk-post-nav {
+	margin-top: 3rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--sk-border);
+}
+
+/* ==========================================================================
+   GURU SINGLE
+   ========================================================================== */
+
+.sk-guru-layout {
+	gap: 2rem;
+}
+
+.sk-guru-photo {
+	max-width: 360px;
+}
+
+.sk-guru-avatar {
+	margin: 0 !important;
+}
+
+.sk-guru-avatar img {
+	border-radius: 20px;
+	width: 100%;
+	box-shadow: var(--sk-shadow);
+}
+
+.sk-guru-detail .wp-block-post-content {
+	gap: 1rem;
+}
+
+/* Meta info box rendered by the plugin */
+.sk-info-box {
+	background: var(--sk-sky);
+	border: 1px solid var(--sk-border);
+	border-radius: var(--sk-radius);
+	padding: 1.5rem 1.75rem;
+	margin-bottom: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem 2rem;
+}
+
+.sk-info-box__item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	min-width: 0;
+}
+
+.sk-info-box__icon {
+	font-size: 1.5rem;
+	line-height: 1;
+	flex: 0 0 auto;
+}
+
+.sk-info-box__label {
+	display: block;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--sk-slate);
+}
+
+.sk-info-box__value {
+	display: block;
+	font-weight: 700;
+	color: var(--sk-ink);
+}
+
+/* ==========================================================================
+   GALERI GRID (plugin output)
+   ========================================================================== */
+
+.sk-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+.sk-gallery__item {
+	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
+	cursor: zoom-in;
+	background: var(--sk-sky);
+}
+
+.sk-gallery__item img {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.35s ease;
+}
+
+.sk-gallery__item:hover img {
+	transform: scale(1.06);
+}
+
+.sk-gallery__item::after {
+	content: "🔍";
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+	background: rgba(11, 42, 74, 0.45);
+	opacity: 0;
+	transition: opacity 0.25s ease;
+}
+
+.sk-gallery__item:hover::after {
+	opacity: 1;
+}
+
+/* Lightbox */
+.sk-lightbox {
+	position: fixed;
+	inset: 0;
+	z-index: 99999;
+	background: rgba(4, 14, 26, 0.92);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.sk-lightbox.is-open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sk-lightbox img {
+	max-width: min(1100px, 92vw);
+	max-height: 84vh;
+	border-radius: 14px;
+	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+.sk-lightbox__close {
+	position: absolute;
+	top: 1.25rem;
+	right: 1.5rem;
+	background: none;
+	border: 0;
+	color: #fff;
+	font-size: 2.4rem;
+	cursor: pointer;
+	line-height: 1;
+}
+
+.sk-lightbox__caption {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 0.4rem 1rem;
+	border-radius: 999px;
+	font-size: 0.875rem;
+	max-width: 80%;
+	text-align: center;
+}
+
+/* ==========================================================================
+   PPDB FORM (plugin output)
+   ========================================================================== */
+
+.sk-ppdb-wrap {
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+.sk-ppdb-form {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.1rem;
+	background: #fff;
+	border: 1px solid var(--sk-border);
+	border-radius: var(--sk-radius);
+	padding: 2rem;
+	box-shadow: var(--sk-shadow);
+}
+
+.sk-ppdb-form .sk-field-full {
+	grid-column: 1 / -1;
+}
+
+.sk-ppdb-form label {
+	display: block;
+	font-weight: 700;
+	font-size: 0.875rem;
+	margin-bottom: 0.4rem;
+	color: var(--sk-ink);
+}
+
+.sk-ppdb-form label .sk-required {
+	color: #d64545;
+}
+
+.sk-ppdb-form input[type="text"],
+.sk-ppdb-form input[type="email"],
+.sk-ppdb-form input[type="tel"],
+.sk-ppdb-form input[type="date"],
+.sk-ppdb-form input[type="number"],
+.sk-ppdb-form select,
+.sk-ppdb-form textarea {
+	width: 100%;
+	padding: 0.7rem 0.9rem;
+	border: 1.5px solid var(--sk-border);
+	border-radius: 10px;
+	background: #fbfcfe;
+	font-family: inherit;
+	font-size: 0.95rem;
+	color: var(--sk-ink);
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sk-ppdb-form input:focus,
+.sk-ppdb-form select:focus,
+.sk-ppdb-form textarea:focus {
+	outline: none;
+	border-color: var(--sk-navy);
+	box-shadow: 0 0 0 3px rgba(11, 42, 74, 0.12);
+}
+
+.sk-ppdb-form .sk-ppdb-submit {
+	grid-column: 1 / -1;
+	justify-self: center;
+	padding: 0.9rem 2.6rem;
+	background: var(--sk-gold);
+	color: var(--sk-navy-deep);
+	border: 0;
+	border-radius: 999px;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 800;
+	cursor: pointer;
+	transition: background 0.2s ease, transform 0.2s ease;
+	box-shadow: 0 8px 20px rgba(240, 180, 41, 0.4);
+}
+
+.sk-ppdb-form .sk-ppdb-submit:hover {
+	background: #f7c95c;
+	transform: translateY(-2px);
+}
+
+.sk-ppdb-msg {
+	border-radius: 14px;
+	padding: 1.1rem 1.4rem;
+	margin-bottom: 1.25rem;
+	font-weight: 600;
+}
+
+.sk-ppdb-msg--success {
+	background: #e8f7ee;
+	border: 1px solid #bfe8cf;
+	color: #1c7c44;
+}
+
+.sk-ppdb-msg--error {
+	background: #fdeeee;
+	border: 1px solid #f5c6c6;
+	color: #b13c3c;
+}
+
+.sk-ppdb-note {
+	margin-top: 1.25rem;
+	text-align: center;
+	color: var(--sk-slate);
+	font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   404
+   ========================================================================== */
+
+.sk-404 {
+	padding: 5rem 0;
+	text-align: center;
+}
+
+.sk-404-code {
+	margin: 0;
+	color: var(--sk-navy);
+	font-size: clamp(5rem, 16vw, 9rem);
+	line-height: 1;
+	letter-spacing: -0.03em;
+	text-shadow: 0 20px 40px rgba(11, 42, 74, 0.15);
+}
+
+/* ==========================================================================
+   REVEAL ANIMATION
+   ========================================================================== */
+
+.sk-reveal {
+	opacity: 0;
+	transform: translateY(26px);
+	transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.sk-reveal.is-visible {
+	opacity: 1;
+	transform: none;
+}
+
+/* Back to top */
+.sk-to-top {
+	position: fixed;
+	bottom: 1.4rem;
+	right: 1.4rem;
+	z-index: 900;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	border: 0;
+	background: var(--sk-navy);
+	color: #fff;
+	font-size: 1.2rem;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(10px);
+	transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, background 0.2s ease;
+	box-shadow: 0 10px 24px rgba(11, 42, 74, 0.35);
+}
+
+.sk-to-top.is-visible {
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+}
+
+.sk-to-top:hover {
+	background: var(--sk-gold);
+	color: var(--sk-navy-deep);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+	.sk-query .wp-block-post-template {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.sk-query-agenda .wp-block-post-template {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.sk-float-1 { left: -1%; }
+	.sk-float-2 { right: -1%; }
+}
+
+@media (max-width: 781px) {
+	.sk-topbar {
+		display: none;
+	}
+
+	.sk-header-inner {
+		flex-wrap: wrap;
+	}
+
+	.sk-nav {
+		order: 3;
+		flex-basis: 100%;
+	}
+
+	.sk-hero {
+		padding: 3rem 0;
+	}
+
+	.sk-hero-media {
+		margin-top: 1rem;
+	}
+
+	.sk-float-1 { left: 2%; }
+	.sk-float-2 { right: 2%; }
+
+	.sk-info-box {
+		grid-template-columns: 1fr;
+	}
+
+	.sk-gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.sk-ppdb-form {
+		grid-template-columns: 1fr;
+	}
+
+	.sk-ppdb-form .sk-field-full {
+		grid-column: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.sk-query .wp-block-post-template,
+	.sk-query-agenda .wp-block-post-template {
+		grid-template-columns: 1fr;
+	}
+
+	.sk-page-hero {
+		padding: 2.5rem 0;
+	}
+
+	.sk-news,
+	.sk-prestasi,
+	.sk-testimoni,
+	.sk-kontak,
+	.sk-ekskul,
+	.sk-agenda {
+		padding: 2.75rem 0 2.25rem;
+	}
+
+	.sk-gallery {
+		grid-template-columns: 1fr 1fr;
+		gap: 0.6rem;
+	}
+
+	.sk-brand-text .wp-block-site-tagline {
+		display: none;
+	}
+
+	.sk-header-cta {
+		display: none;
+	}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	.sk-reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+
+	.sk-float {
+		animation: none;
+	}
+}

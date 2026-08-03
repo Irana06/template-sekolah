@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Pita penghargaan">
+	<rect x="0" y="0" width="400" height="400" rx="24" fill="#fdf0f0"/>
+	<path d="M150 80 L200 150 L250 80 L250 250 L200 300 L150 250 Z" fill="#d64545"/>
+	<path d="M150 80 L175 80 L200 120 L200 150 Z" fill="#b13c3c"/>
+	<circle cx="200" cy="165" r="52" fill="#f0b429" stroke="#d99a1f" stroke-width="8"/>
+	<text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#fff">★</text>
+</svg>

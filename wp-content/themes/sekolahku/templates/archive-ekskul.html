@@ -1,0 +1,45 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"sk-main"} -->
+<main class="wp-block-group sk-main">
+
+	<!-- wp:group {"className":"sk-page-hero","backgroundColor":"navy","textColor":"white","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group sk-page-hero has-white-color has-text-color has-navy-background-color has-background">
+		<!-- wp:query-title {"type":"archive","className":"sk-page-title"} /-->
+		<!-- wp:paragraph {"className":"sk-page-tagline","fontSize":"small"} -->
+		<p class="sk-page-tagline has-small-font-size">Wadah mengembangkan bakat dan minat siswa.</p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"className":"sk-content","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group sk-content">
+		<!-- wp:query {"query":{"perPage":12,"postType":"ekskul"},"className":"sk-query"} -->
+		<div class="wp-block-query sk-query">
+			<!-- wp:post-template -->
+			<!-- wp:group {"className":"sk-card sk-card-avatar","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group sk-card sk-card-avatar">
+				<!-- wp:post-featured-image {"isLink":true,"className":"sk-card-media sk-card-media-square"} /-->
+				<!-- wp:group {"className":"sk-card-body sk-card-body-center","layout":{"type":"constrained"}} -->
+				<div class="wp-block-group sk-card-body sk-card-body-center">
+					<!-- wp:post-title {"isLink":true,"level":3,"fontSize":"large"} /-->
+					<!-- wp:post-excerpt {"moreText":"","excerptLength":14} /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+			<!-- /wp:post-template -->
+			<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+			<!-- /wp:query-pagination -->
+		</div>
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

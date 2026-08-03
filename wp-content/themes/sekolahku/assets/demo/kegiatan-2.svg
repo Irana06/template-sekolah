@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Kegiatan membaca di perpustakaan">
+	<rect x="0" y="0" width="800" height="600" rx="28" fill="#e9f1fa"/>
+	<rect x="70" y="80" width="200" height="380" rx="10" fill="#13477a"/>
+	<rect x="70" y="80" width="200" height="60" rx="10" fill="#0b2a4a"/>
+	<rect x="90" y="160" width="54" height="70" rx="4" fill="#f0b429"/>
+	<rect x="152" y="160" width="54" height="70" rx="4" fill="#d64545"/>
+	<rect x="214" y="160" width="42" height="70" rx="4" fill="#63b076"/>
+	<rect x="90" y="250" width="54" height="70" rx="4" fill="#63b076"/>
+	<rect x="152" y="250" width="54" height="70" rx="4" fill="#f0b429"/>
+	<rect x="214" y="250" width="42" height="70" rx="4" fill="#8a6fde"/>
+	<rect x="90" y="340" width="54" height="70" rx="4" fill="#d64545"/>
+	<rect x="152" y="340" width="54" height="70" rx="4" fill="#8a6fde"/>
+	<rect x="214" y="340" width="42" height="70" rx="4" fill="#f0b429"/>
+	<rect x="530" y="80" width="200" height="380" rx="10" fill="#13477a"/>
+	<rect x="530" y="80" width="200" height="60" rx="10" fill="#0b2a4a"/>
+	<rect x="550" y="160" width="54" height="70" rx="4" fill="#8a6fde"/>
+	<rect x="612" y="160" width="54" height="70" rx="4" fill="#f0b429"/>
+	<rect x="674" y="160" width="42" height="70" rx="4" fill="#d64545"/>
+	<rect x="550" y="250" width="54" height="70" rx="4" fill="#f0b429"/>
+	<rect x="612" y="250" width="54" height="70" rx="4" fill="#63b076"/>
+	<rect x="674" y="250" width="42" height="70" rx="4" fill="#8a6fde"/>
+	<circle cx="400" cy="300" r="52" fill="#f3c58a"/>
+	<path d="M352 320 Q400 290 448 320 L440 480 H360 Z" fill="#13477a"/>
+	<rect x="330" y="420" width="140" height="90" rx="10" fill="#f0b429"/>
+	<rect x="388" y="250" width="34" height="44" rx="6" fill="#fff" transform="rotate(-14 405 272)"/>
+	<path d="M505 470 Q400 390 295 470 Z" fill="#4f9a61" opacity="0.5"/>
+	<circle cx="150" cy="540" r="24" fill="#63b076"/>
+	<circle cx="620" cy="540" r="24" fill="#63b076"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Logo Sekolah">
+	<defs>
+		<linearGradient id="lgShield" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#13477a"/>
+			<stop offset="1" stop-color="#0b2a4a"/>
+		</linearGradient>
+	</defs>
+	<path d="M120 8 L214 46 V132 C214 184 174 218 120 234 C66 218 26 184 26 132 V46 Z" fill="url(#lgShield)" stroke="#f0b429" stroke-width="6"/>
+	<path d="M120 24 L196 55 V130 C196 172 166 202 120 216 C74 202 44 172 44 130 V55 Z" fill="#0b2a4a" stroke="#f0b429" stroke-width="2"/>
+	<path d="M60 96 L96 72 L120 92 L144 72 L180 96 V126 L120 158 L60 126 Z" fill="#fff"/>
+	<path d="M60 96 L120 130 L180 96" fill="none" stroke="#f0b429" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M120 60 L128 76 L146 78 L132 90 L136 108 L120 99 L104 108 L108 90 L94 78 L112 76 Z" fill="#f0b429"/>
+	<path d="M120 140 V170 M104 158 H136" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+	<text x="120" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#ffe3a3">SEKOLAHKU</text>
+</svg>

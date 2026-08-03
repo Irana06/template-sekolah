@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ikon seni rupa">
+	<circle cx="100" cy="100" r="96" fill="#e9f1fa"/>
+	<path d="M72 40 Q140 30 156 78 Q172 126 140 152 Q120 168 96 166 Q52 160 46 118 Q40 74 72 40 Z" fill="#fff" stroke="#13477a" stroke-width="8"/>
+	<circle cx="84" cy="88" r="10" fill="#d64545"/>
+	<circle cx="122" cy="74" r="10" fill="#f0b429"/>
+	<circle cx="142" cy="110" r="10" fill="#63b076"/>
+	<circle cx="100" cy="130" r="10" fill="#8a6fde"/>
+	<rect x="88" y="168" width="24" height="22" rx="6" fill="#d99a1f" transform="rotate(28 100 179)"/>
+</svg>

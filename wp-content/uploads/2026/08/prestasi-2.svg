@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Medali prestasi">
+	<rect x="0" y="0" width="400" height="400" rx="24" fill="#eef6ff"/>
+	<path d="M200 190 L120 90 H180 L200 130 L220 90 H280 Z" fill="#f0b429"/>
+	<path d="M200 190 L160 130 H240 Z" fill="#d99a1f"/>
+	<circle cx="200" cy="245" r="80" fill="#f0b429" stroke="#d99a1f" stroke-width="10"/>
+	<circle cx="200" cy="245" r="60" fill="#fff"/>
+	<text x="200" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#0b2a4a">1</text>
+</svg>

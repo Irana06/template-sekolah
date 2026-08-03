@@ -1,0 +1,36 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"sk-main"} -->
+<main class="wp-block-group sk-main">
+
+	<!-- wp:group {"className":"sk-content sk-content-narrow","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group sk-content sk-content-narrow">
+
+		<!-- wp:post-featured-image {"className":"sk-single-cover"} /-->
+
+		<!-- wp:group {"className":"sk-meta","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+		<div class="wp-block-group sk-meta">
+			<!-- wp:post-date {"fontSize":"small"} /-->
+			<!-- wp:post-author {"showAvatar":false,"fontSize":"small"} /-->
+			<!-- wp:post-terms {"term":"category","fontSize":"small"} /-->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:post-title {"level":1,"className":"sk-single-title"} /-->
+
+		<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+		<!-- wp:group {"className":"sk-post-nav","layout":{"type":"flex","justifyContent":"space-between"}} -->
+		<div class="wp-block-group sk-post-nav">
+			<!-- wp:post-navigation-link {"type":"previous","label":"← Postingan sebelumnya"} /-->
+			<!-- wp:post-navigation-link {"label":"Postingan berikutnya →"} /-->
+		</div>
+		<!-- /wp:group -->
+
+	</div>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

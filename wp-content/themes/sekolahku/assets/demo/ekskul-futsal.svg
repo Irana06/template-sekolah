@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ikon futsal">
+	<circle cx="100" cy="100" r="96" fill="#e9f1fa"/>
+	<circle cx="100" cy="100" r="62" fill="#fff" stroke="#13477a" stroke-width="8"/>
+	<path d="M100 38 L112 76 L152 62 L132 96 L168 122 L128 122 L136 162 L100 136 L64 162 L72 122 L32 122 L68 96 L48 62 L88 76 Z" fill="#0b2a4a"/>
+	<circle cx="100" cy="100" r="14" fill="#f0b429"/>
+</svg>

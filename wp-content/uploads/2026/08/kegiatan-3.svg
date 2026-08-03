@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Kegiatan olahraga">
+	<rect x="0" y="0" width="800" height="600" rx="28" fill="#e9f1fa"/>
+	<rect x="60" y="380" width="680" height="170" rx="14" fill="#63b076"/>
+	<path d="M60 400 H740 M60 530 H740" stroke="#e9f1fa" stroke-width="8"/>
+	<rect x="380" y="390" width="40" height="150" fill="#e9f1fa" opacity="0.7"/>
+	<circle cx="400" cy="465" r="46" fill="none" stroke="#e9f1fa" stroke-width="8"/>
+	<rect x="250" y="330" width="90" height="140" rx="10" fill="#fff"/>
+	<rect x="255" y="380" width="80" height="14" rx="4" fill="#d64545"/>
+	<circle cx="295" cy="300" r="40" fill="#f3c58a"/>
+	<path d="M255 330 Q295 300 335 330 L330 460 H260 Z" fill="#0b2a4a"/>
+	<rect x="520" y="330" width="90" height="140" rx="10" fill="#fff"/>
+	<rect x="525" y="380" width="80" height="14" rx="4" fill="#13477a"/>
+	<circle cx="565" cy="300" r="40" fill="#f3c58a"/>
+	<path d="M525 330 Q565 300 605 330 L600 460 H530 Z" fill="#d64545"/>
+	<circle cx="400" cy="330" r="36" fill="#fff"/>
+	<path d="M400 294 Q430 310 420 340 Q410 368 380 350 Q372 322 400 294 Z" fill="#13477a"/>
+	<rect x="120" y="470" width="70" height="70" rx="8" fill="#13477a"/>
+	<rect x="610" y="470" width="70" height="70" rx="8" fill="#13477a"/>
+</svg>
