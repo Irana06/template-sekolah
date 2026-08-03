@@ -845,12 +845,14 @@ img {
 }
 
 .sk-map {
+	display: block;
 	width: 100%;
+	max-width: 1360px;
 	height: 380px;
+	margin: 1.5rem auto 0;
 	border: 0;
 	border-radius: var(--sk-radius);
 	box-shadow: var(--sk-shadow);
-	margin-top: 1.5rem;
 }
 
 /* ==========================================================================
