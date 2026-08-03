@@ -5,7 +5,7 @@
  * @package Sekolahku
  */
 
-return '<!-- wp:group {"align":"full","className":"sk-visi-misi","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-visi-misi","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-visi-misi">
 	<!-- wp:columns {"className":"sk-vm-cols"} -->
 	<div class="wp-block-columns sk-vm-cols">

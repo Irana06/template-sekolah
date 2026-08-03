@@ -7,7 +7,7 @@
 
 $head = sekolahku_section_head( 'Kembangkan Bakatmu', 'Ekstrakurikuler', 'Pilih wadah yang tepat untuk mengembangkan bakat dan minatmu.', '/ekstrakurikuler', 'Lihat Semua Ekskul' );
 
-return '<!-- wp:group {"align":"full","className":"sk-ekskul","backgroundColor":"sky","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-ekskul","backgroundColor":"sky","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-ekskul has-sky-background-color has-background">
 	' . $head . '
 	<!-- wp:query {"query":{"perPage":6,"postType":"ekskul"},"className":"sk-query"} -->

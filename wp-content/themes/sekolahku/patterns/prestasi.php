@@ -7,7 +7,7 @@
 
 $head = sekolahku_section_head( 'Bangga Sekolahku', 'Prestasi Terbaru', 'Raihan membanggakan siswa dan sekolah di berbagai ajang.', '/prestasi', 'Lihat Semua Prestasi' );
 
-return '<!-- wp:group {"align":"full","className":"sk-prestasi","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-prestasi","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-prestasi">
 	' . $head . '
 	<!-- wp:query {"query":{"perPage":4,"postType":"prestasi"},"className":"sk-query"} -->

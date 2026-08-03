@@ -7,7 +7,7 @@
 
 return '<!-- wp:group {"align":"full","className":"sk-hero","backgroundColor":"navy","textColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull sk-hero has-white-color has-text-color has-navy-background-color has-background">
-	<!-- wp:group {"layout":{"type":"constrained"}} -->
+	<!-- wp:group {"layout":{"type":"constrained","contentSize":"1360px"}} -->
 	<div class="wp-block-group">
 		<!-- wp:columns {"verticalAlignment":"center","className":"sk-hero-cols"} -->
 		<div class="wp-block-columns are-vertically-aligned-center sk-hero-cols">

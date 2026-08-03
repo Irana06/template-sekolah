@@ -5,7 +5,7 @@
  * @package Sekolahku
  */
 
-return '<!-- wp:group {"align":"full","className":"sk-sambutan","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-sambutan","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-sambutan">
 	<!-- wp:columns {"verticalAlignment":"center","className":"sk-sambutan-cols"} -->
 	<div class="wp-block-columns are-vertically-aligned-center sk-sambutan-cols">

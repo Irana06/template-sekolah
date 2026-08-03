@@ -5,7 +5,7 @@
  * @package Sekolahku
  */
 
-return '<!-- wp:group {"align":"full","className":"sk-testimoni","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-testimoni","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-testimoni">
 	<!-- wp:group {"className":"sk-section-head sk-section-head-center","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group sk-section-head sk-section-head-center">

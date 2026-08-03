@@ -5,7 +5,7 @@
  * @package Sekolahku
  */
 
-return '<!-- wp:group {"align":"full","className":"sk-info-cards","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-info-cards","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-info-cards">
 	<!-- wp:columns {"className":"sk-info-cols"} -->
 	<div class="wp-block-columns sk-info-cols">

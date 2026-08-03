@@ -99,6 +99,9 @@ img {
 .sk-topbar-inner {
 	padding-top: 0.45rem;
 	padding-bottom: 0.45rem;
+}
+
+.sk-topbar-row {
 	gap: 0.5rem 2rem;
 }
 
@@ -108,9 +111,12 @@ img {
 }
 
 .sk-header-inner {
-	gap: 1rem;
 	padding-top: 0.8rem;
 	padding-bottom: 0.8rem;
+}
+
+.sk-header-row {
+	gap: 1rem;
 }
 
 .sk-brand {
@@ -1249,7 +1255,7 @@ img {
 		display: none;
 	}
 
-	.sk-header-inner {
+	.sk-header-row {
 		flex-wrap: wrap;
 	}
 

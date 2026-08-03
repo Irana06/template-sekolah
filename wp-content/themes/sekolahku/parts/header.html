@@ -1,46 +1,56 @@
 <!-- wp:group {"className":"sk-header-wrap","layout":{"type":"default"}} -->
 <div class="wp-block-group sk-header-wrap">
 
-	<!-- wp:group {"className":"sk-topbar","backgroundColor":"navy-deep","textColor":"white","layout":{"type":"constrained"}} -->
+	<!-- Topbar: band full width -->
+	<!-- wp:group {"className":"sk-topbar","backgroundColor":"navy-deep","textColor":"white","layout":{"type":"default"}} -->
 	<div class="wp-block-group sk-topbar has-white-color has-text-color has-navy-deep-background-color has-background">
-		<!-- wp:group {"className":"sk-topbar-inner","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+		<!-- wp:group {"className":"sk-topbar-inner","layout":{"type":"constrained","contentSize":"1360px"}} -->
 		<div class="wp-block-group sk-topbar-inner">
-			<!-- wp:paragraph {"className":"sk-topbar-item","fontSize":"small"} -->
-			<p class="sk-topbar-item has-small-font-size">📞 (021) 1234-5678 &nbsp;·&nbsp; ✉️ info@sekolahku.sch.id</p>
-			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"className":"sk-topbar-item","fontSize":"small"} -->
-			<p class="sk-topbar-item has-small-font-size">🕗 Senin – Jumat, 07.00 – 16.00 WIB</p>
-			<!-- /wp:paragraph -->
+			<!-- wp:group {"className":"sk-topbar-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+			<div class="wp-block-group sk-topbar-row">
+				<!-- wp:paragraph {"className":"sk-topbar-item","fontSize":"small"} -->
+				<p class="sk-topbar-item has-small-font-size">📞 (021) 1234-5678 &nbsp;·&nbsp; ✉️ info@sekolahku.sch.id</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"className":"sk-topbar-item","fontSize":"small"} -->
+				<p class="sk-topbar-item has-small-font-size">🕗 Senin – Jumat, 07.00 – 16.00 WIB</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"className":"sk-header","layout":{"type":"constrained"}} -->
+	<!-- Header utama: band full width -->
+	<!-- wp:group {"className":"sk-header","layout":{"type":"default"}} -->
 	<div class="wp-block-group sk-header">
-		<!-- wp:group {"className":"sk-header-inner","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+		<!-- wp:group {"className":"sk-header-inner","layout":{"type":"constrained","contentSize":"1360px"}} -->
 		<div class="wp-block-group sk-header-inner">
-			<!-- wp:group {"className":"sk-brand","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-			<div class="wp-block-group sk-brand">
-				<!-- wp:site-logo {"width":48,"shouldSyncIcon":false,"className":"sk-logo"} /-->
-				<!-- wp:group {"className":"sk-brand-text","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-				<div class="wp-block-group sk-brand-text">
-					<!-- wp:site-title {"level":0} /-->
-					<!-- wp:site-tagline {"fontSize":"small"} /-->
+			<!-- wp:group {"className":"sk-header-row","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+			<div class="wp-block-group sk-header-row">
+				<!-- wp:group {"className":"sk-brand","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+				<div class="wp-block-group sk-brand">
+					<!-- wp:site-logo {"width":48,"shouldSyncIcon":false,"className":"sk-logo"} /-->
+					<!-- wp:group {"className":"sk-brand-text","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+					<div class="wp-block-group sk-brand-text">
+						<!-- wp:site-title {"level":0} /-->
+						<!-- wp:site-tagline {"fontSize":"small"} /-->
+					</div>
+					<!-- /wp:group -->
 				</div>
 				<!-- /wp:group -->
+
+				<!-- wp:navigation {"overlayMenu":"mobile","className":"sk-nav","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} /-->
+
+				<!-- wp:buttons {"className":"sk-header-cta","layout":{"type":"flex","justifyContent":"right"}} -->
+				<div class="wp-block-buttons sk-header-cta">
+					<!-- wp:button {"className":"is-style-sk-gold","style":{"spacing":{"padding":{"top":"0.6rem","bottom":"0.6rem","left":"1.15rem","right":"1.15rem"}}},"fontSize":"small"} -->
+					<div class="wp-block-button is-style-sk-gold has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-text-color has-navy-deep-color has-background has-gold-background-color" style="padding-top:0.6rem;padding-right:1.15rem;padding-bottom:0.6rem;padding-left:1.15rem" href="/ppdb">Daftar PPDB</a></div>
+					<!-- /wp:button -->
+				</div>
+				<!-- /wp:buttons -->
 			</div>
 			<!-- /wp:group -->
-
-			<!-- wp:navigation {"overlayMenu":"mobile","className":"sk-nav","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} /-->
-
-			<!-- wp:buttons {"className":"sk-header-cta","layout":{"type":"flex","justifyContent":"right"}} -->
-			<div class="wp-block-buttons sk-header-cta">
-				<!-- wp:button {"className":"is-style-sk-gold","style":{"spacing":{"padding":{"top":"0.6rem","bottom":"0.6rem","left":"1.15rem","right":"1.15rem"}}},"fontSize":"small"} -->
-				<div class="wp-block-button is-style-sk-gold has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-text-color has-navy-deep-color has-background has-gold-background-color" style="padding-top:0.6rem;padding-right:1.15rem;padding-bottom:0.6rem;padding-left:1.15rem" href="/ppdb">Daftar PPDB</a></div>
-				<!-- /wp:button -->
-			</div>
-			<!-- /wp:buttons -->
 		</div>
 		<!-- /wp:group -->
 	</div>

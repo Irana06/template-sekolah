@@ -5,7 +5,7 @@
  * @package Sekolahku
  */
 
-return '<!-- wp:group {"align":"full","className":"sk-cta","textColor":"white","gradient":"navy-shine","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-cta","textColor":"white","gradient":"navy-shine","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-cta has-text-color has-white-color has-gradient-background has-navyshine-gradient-background">
 	<!-- wp:group {"className":"sk-cta-inner","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group sk-cta-inner">

@@ -7,7 +7,7 @@
 
 $head = sekolahku_section_head( 'Yang Akan Datang', 'Agenda Kegiatan', 'Catat jadwal penting sekolah agar tidak terlewat.', '/agenda', 'Lihat Semua Agenda' );
 
-return '<!-- wp:group {"align":"full","className":"sk-agenda","backgroundColor":"sky","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-agenda","backgroundColor":"sky","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-agenda has-sky-background-color has-background">
 	' . $head . '
 	<!-- wp:query {"query":{"perPage":3,"postType":"agenda","order":"asc"},"className":"sk-query sk-query-agenda"} -->

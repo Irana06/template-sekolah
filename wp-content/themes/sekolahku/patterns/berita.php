@@ -7,7 +7,7 @@
 
 $head = sekolahku_section_head( 'Kabar Terkini', 'Berita & Informasi Terbaru', 'Ikuti perkembangan kegiatan, prestasi, dan pengumuman terbaru dari sekolah kami.', '/berita', 'Lihat Semua Berita' );
 
-return '<!-- wp:group {"align":"full","className":"sk-news","layout":{"type":"constrained"}} -->
+return '<!-- wp:group {"align":"full","className":"sk-news","layout":{"type":"constrained","contentSize":"1360px"}} -->
 <div class="wp-block-group alignfull sk-news">
 	' . $head . '
 	<!-- wp:query {"query":{"perPage":3,"postType":"post"},"className":"sk-query"} -->
