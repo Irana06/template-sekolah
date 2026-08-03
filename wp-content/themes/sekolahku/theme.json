@@ -82,7 +82,8 @@
 			]
 		},
 		"typography": {
-			"fluid": true,
+			"fluid": false,
+			"defaultFontSizes": false,
 			"fontFamilies": [
 				{
 					"fontFamily": "\"Plus Jakarta Sans\", sans-serif",
@@ -120,17 +121,17 @@
 				{
 					"name": "Ekstra Besar",
 					"slug": "x-large",
-					"size": "clamp(1.5rem, 3vw, 2rem)"
+					"size": "clamp(1.375rem, 2.4vw, 1.75rem)"
 				},
 				{
 					"name": "Ekstra Ekstra Besar",
 					"slug": "xx-large",
-					"size": "clamp(2rem, 4.5vw, 3.2rem)"
+					"size": "clamp(1.625rem, 3.2vw, 2.375rem)"
 				},
 				{
 					"name": "Raksasa",
 					"slug": "huge",
-					"size": "clamp(2.4rem, 6vw, 4.2rem)"
+					"size": "clamp(1.875rem, 4vw, 3rem)"
 				}
 			]
 		},

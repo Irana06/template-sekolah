@@ -661,7 +661,7 @@ img {
 }
 
 .sk-sambutan-text .sk-section-title {
-	font-size: clamp(1.5rem, 3vw, 2.1rem);
+	font-size: clamp(1.3rem, 2.6vw, 1.7rem);
 }
 
 .sk-sign {
