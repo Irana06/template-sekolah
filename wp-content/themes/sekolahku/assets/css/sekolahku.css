@@ -21,6 +21,7 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: clip;
 }
 
 body.sk-site {
@@ -261,7 +262,7 @@ img {
 	pointer-events: none;
 }
 
-.sk-page-hero .wp-block-group {
+.sk-page-hero > .wp-block-group {
 	position: relative;
 }
 
@@ -467,7 +468,7 @@ img {
 	pointer-events: none;
 }
 
-.sk-hero .wp-block-group {
+.sk-hero > .wp-block-group {
 	position: relative;
 }
 
@@ -690,6 +691,7 @@ img {
 
 .sk-sambutan {
 	padding: 3.5rem 0 1.5rem;
+	overflow: hidden;
 }
 
 .sk-sambutan-cols {
@@ -1294,6 +1296,10 @@ img {
    RESPONSIVE
    ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   Tablet (≤1024px)
+   -------------------------------------------------------------------------- */
+
 @media (max-width: 1024px) {
 	.sk-query .wp-block-post-template {
 		grid-template-columns: repeat(2, 1fr);
@@ -1303,9 +1309,52 @@ img {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.sk-info-cols {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 	.sk-float-1 { left: -1%; }
 	.sk-float-2 { right: -1%; }
+
+	/* Header: hamburger menu di tablet (bukan deretan link inline) */
+	.sk-nav {
+		flex: 0 0 auto;
+	}
+
+	.sk-header .sk-nav .wp-block-navigation__responsive-container-open {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 12px;
+		background: var(--sk-navy);
+		color: #fff;
+		box-shadow: 0 6px 14px rgba(11, 42, 74, 0.18);
+		transition: background-color 0.2s ease;
+	}
+
+	.sk-header .sk-nav .wp-block-navigation__responsive-container-open:hover {
+		background: var(--sk-navy-light);
+	}
+
+	.sk-nav .wp-block-navigation__responsive-container:not(.is-menu-open) {
+		display: none;
+	}
+
+	.sk-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+		gap: 0.75rem;
+	}
+
+	.sk-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item a {
+		padding: 0.6rem 0.2rem;
+		font-size: 1.05rem;
+	}
 }
+
+/* --------------------------------------------------------------------------
+   Tablet portrait / large phone (≤781px)
+   -------------------------------------------------------------------------- */
 
 @media (max-width: 781px) {
 	.sk-topbar {
@@ -1314,11 +1363,6 @@ img {
 
 	.sk-header-row {
 		flex-wrap: wrap;
-	}
-
-	.sk-nav {
-		order: 3;
-		flex-basis: 100%;
 	}
 
 	.sk-hero {
@@ -1332,13 +1376,29 @@ img {
 	.sk-float-1 { left: 2%; }
 	.sk-float-2 { right: 2%; }
 
+	/* Statistik: 2×2 grid biar tidak menumpuk vertikal */
+	.sk-stats-cols {
+		display: grid !important;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.5rem 1rem;
+	}
+
+	/* Footer: 2×2 grid di tablet, tidak menumpuk 4 kolom */
+	.sk-footer-cols {
+		display: grid !important;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 2.5rem 2rem;
+	}
+
 	.sk-info-box {
 		grid-template-columns: 1fr;
 	}
 
-	.sk-info-cols,
 	.sk-testi-cols,
-	.sk-kontak-cards,
+	.sk-kontak-cards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 	.sk-vm-cols {
 		grid-template-columns: 1fr;
 	}
@@ -1355,6 +1415,10 @@ img {
 		grid-column: auto;
 	}
 }
+
+/* --------------------------------------------------------------------------
+   Mobile (≤600px)
+   -------------------------------------------------------------------------- */
 
 @media (max-width: 600px) {
 	.sk-query .wp-block-post-template,
@@ -1375,6 +1439,23 @@ img {
 		padding: 2.75rem 0 2.25rem;
 	}
 
+	/* Section header: judul di atas, tombol di bawah */
+	.sk-section-head {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.sk-info-cols,
+	.sk-testi-cols,
+	.sk-kontak-cards {
+		grid-template-columns: 1fr;
+	}
+
+	.sk-stats-cols {
+		gap: 1.25rem 0.75rem;
+	}
+
 	.sk-gallery {
 		grid-template-columns: 1fr 1fr;
 		gap: 0.6rem;
@@ -1385,7 +1466,7 @@ img {
 	}
 
 	.sk-header-cta {
-		display: none;
+		display: none !important;
 	}
 }
 

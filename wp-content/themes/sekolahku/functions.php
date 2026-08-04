@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'SEKOLAHKU_VERSION', '1.0.0' );
+define( 'SEKOLAHKU_VERSION', '1.0.1' );
 
 /**
  * Theme setup.
@@ -44,14 +44,14 @@ function sekolahku_assets() {
 		'sekolahku',
 		get_template_directory_uri() . '/assets/css/sekolahku.css',
 		array(),
-		SEKOLAHKU_VERSION
+		filemtime( get_template_directory() . '/assets/css/sekolahku.css' )
 	);
 
 	wp_enqueue_script(
 		'sekolahku',
 		get_template_directory_uri() . '/assets/js/sekolahku.js',
 		array(),
-		SEKOLAHKU_VERSION,
+		filemtime( get_template_directory() . '/assets/js/sekolahku.js' ),
 		true
 	);
 
